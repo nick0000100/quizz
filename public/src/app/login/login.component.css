@@ -1,0 +1,13 @@
+div {
+    background-color: lightgray;
+    border: 1px solid black;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    padding: 1em;
+}
+
+button {
+    background-color: blue;
+    color: white;
+}

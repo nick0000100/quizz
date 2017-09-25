@@ -1,0 +1,11 @@
+div {
+    border: 1px solid black;
+    height: 30%;
+    width: 20%;
+    padding: 1em;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 3px;
+}

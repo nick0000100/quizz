@@ -1,0 +1,64 @@
+<h2>Hi {{username}}</h2>
+<p>Choose an snswer for each of the questions and submit the test once done.</p>
+<p>Good Luck</p>
+<form (submit)="submit()" #formData="ngForm">
+    <p>{{pickThree[0]?.question}}</p>
+    <input type="radio" name="answer1"
+    [value]="1"
+    required
+    [(ngModel)]="answer1"
+    >
+    <label>{{pickThree[0]?.correct}}</label><br>
+    <input type="radio" name="answer1"
+    [value]="2"
+    required
+    [(ngModel)]="answer1"
+    >
+    <label>{{pickThree[0]?.fake1}}</label><br>
+    <input type="radio" name="answer1"
+    [value]="3"
+    required
+    [(ngModel)]="answer1"
+    >
+    <label>{{pickThree[0]?.fake2}}</label><br>
+    <p>{{pickThree[1]?.question}}</p>
+    <input type="radio" name="answer2"
+    [value]="1"
+    required
+    [(ngModel)]="answer2"
+    >
+    <label>{{pickThree[1]?.correct}}</label><br>
+    <input type="radio" name="answer2"
+    [value]="2"
+    required
+    [(ngModel)]="answer2"
+    >
+    <label>{{pickThree[1]?.fake1}}</label><br>
+    <input type="radio" name="answer2"
+    [value]="3"
+    required
+    [(ngModel)]="answer2"
+    >
+    <label>{{pickThree[1]?.fake2}}</label><br>
+    <p>{{pickThree[2]?.question}}</p>
+    <input type="radio" name="answer3"
+    [value]="1"
+    required
+    [(ngModel)]="answer3"
+    >
+    <label>{{pickThree[2]?.correct}}</label><br>
+    <input type="radio" name="answer3"
+    [value]="2"
+    required
+    [(ngModel)]="answer3"
+    >
+    <label>{{pickThree[2]?.fake1}}</label><br>
+    <input type="radio" name="answer3"
+    [value]="3"
+    required
+    [(ngModel)]="answer3"
+    >
+    <label>{{pickThree[2]?.fake2}}</label><br>
+    <button (click)="cancel()">Cancel</button>
+    <input type="submit" value="Submit" [disabled]="formData.invalid">
+</form>
